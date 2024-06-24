@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("images/bg.jpg");
+    background-position: center;
+    background-size: max(1200px,100vw);
+    height: 80vh;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.main .box{
+    height: 80vh;
+    width: 100%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+nav{
+    display: flex;
+    max-width: 70vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 52px;
+}
+nav img{
+    color: red;
+    width: 120px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.hero{
+    height: 91%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px
+}
+.hero> :nth-child(1){
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center
+}
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center
+}
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center
+}
+.seperation{
+    height: 9px;
+    background-color: rgba(128, 128, 128, 0.233);
+}
+.hero-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.btn{
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.053);
+    font-weight: 600px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.356);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-red{
+    background-color: red;
+    padding: 10px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+.btn-red-sm{
+    background-color: red;
+}
+.main input{
+    border: solid rgba(128, 128, 128, 0.314) 1px;
+    padding: 15px 150px 15px 9px;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23,23,23,0.7);
+}
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+}
+
+.secImg{
+    position: relative;
+}
+.secImg img{
+    width: 36vw;
+    position: relative;
+    z-index: 10;
+    padding: 29px 0px 29px 0px
+}
+
+
+.secImg video{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 36vw;
+}
+.first-text{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px 12px;
+}
+.first-text :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+}
+.first-text :nth-child(2){
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+.video3{
+    position: absolute;
+    height: 192px;
+    top: 34px;
+    right: 90px;
+    
+}
+.faq h1{
+    text-align: center;
+    font-size: 55px;
+}
+.faq{
+    background-color: black;
+    color: white;
+    padding: 70px;
+}
+.faqbox:hover{
+    background-color: #414141;
+    color: white;
+}
+.faqbox{
+    transition: all 0.5s ease-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.33);
+    padding: 14px;
+    max-width: 74vw;
+    margin: 18px auto;
+    cursor: pointer;
+}
+
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+
+footer .questions{
+    padding: 34px 0;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+@media screen and (max-width: 900px){
+    .first, .hero-btns{
+        flex-wrap: wrap;
+    }
+    .secImg img{
+        width: 70vw;
+    }
+    .secImg video{
+        width: 70vw;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .first-text :nth-child(1){
+        font-size: 32px;
+    }
+    .first-text :nth-child(2){
+        font-size: 15px;
+    }
+    .faq h1{
+        font-size: 32px;
+    }
+    .faqbox{
+        font-size: 15px
+    }
+
+}
+.footer a{
+    text-decoration: underline;
+    color: white;
+    font-size: 15px;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
